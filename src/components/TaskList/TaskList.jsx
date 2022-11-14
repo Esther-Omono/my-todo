@@ -1,4 +1,4 @@
-import TaskItem from "./TaskItem";
+import TaskItem from "../TaskItem/TaskItem";
 import styles from "./TaskList.module.css";
 
 const TaskList = ({ tasks, deleteTask, toggleTask, enterEditMode }) => {

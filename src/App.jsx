@@ -6,7 +6,7 @@ import useLocalStorage from "./components/hooks/useLocalStorage";
 // custom components
 import CustomForm from "./components/CustomForm";
 import EditForm from "./components/EditForm";
-import TaskList from "./components/TaskList";
+import TaskList from "./components/TaskList/TaskList";
 
 function App() {
     const [tasks, setTasks] = useLocalStorage ("react-todo.tasks", []);

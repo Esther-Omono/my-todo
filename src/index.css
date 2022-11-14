@@ -18,7 +18,7 @@ label {
 }
 
 :root {
-  --_hue: 245;
+  --_hue: 120;
   --_size: 1.8rem;
   --_radius: 0.2em;
   --_tspeed_fast: 180ms;
@@ -85,14 +85,6 @@ label {
   }
 }
 
-/* prefers reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    --_tspeed_slow: 50ms;
-    --_tspeed_fast: 50ms;
-  }
-}
-
 body {
   min-height: 100vh;
   display: grid;
@@ -141,15 +133,6 @@ hr {
     0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
   transition: box-shadow var(--_tspeed_fast) var(--_ttype_squish),
     background-color var(--_tspeed_fast) var(--_ttype_squish);
-}
-
-.btn :where(svg, img, span) {
-  pointer-events: none;
-}
-
-.btn :where(svg, img) {
-  width: var(--_size);
-  height: var(--_size);
 }
 
 .btn:where(:active, :hover) {
